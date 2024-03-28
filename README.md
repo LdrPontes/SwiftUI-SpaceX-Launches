@@ -23,6 +23,8 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
   - Mass
   - First flight
   - Cost per launch
+- [ ] Custom Font
+- [ ] Custom Colors
 
 ## Requirements
 
