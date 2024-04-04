@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct spacexappApp: App {
+struct SpaceXApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouterView {
+                LaunchesListScreen()
+            }
         }
     }
 }
