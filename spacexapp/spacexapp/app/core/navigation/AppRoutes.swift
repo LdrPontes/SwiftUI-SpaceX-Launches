@@ -6,5 +6,6 @@
 //
 
 import Foundation
+import SwiftUI
 
-let appRoutes = launchesRoutes
+let appRoutes: [String: Route] = launchesRoutes

@@ -8,7 +8,13 @@
 import Foundation
 import SwiftUI
 
-typealias Route<T: View> = () -> T
+struct Route {
+    fileprivate let content: AnyView
+    
+    init(@ViewBuilder content: @escaping () -> some View) {
+        self.content = AnyView(content())
+    }
+}
 
 class Router: ObservableObject {
     @Published var path: NavigationPath = NavigationPath()
@@ -16,7 +22,7 @@ class Router: ObservableObject {
     private let routes: [String: Route] = appRoutes
     
     fileprivate func view(for routeName: String) -> some View {
-        routes[routeName]?()
+        routes[routeName]?.content
     }
     
     func pushNamed(_ appRoute: String) {
@@ -26,7 +32,7 @@ class Router: ObservableObject {
     func pop(count: Int = 1) {
         path.removeLast(count)
     }
-    
+
     func popToRoot() {
         path.removeLast(path.count)
     }

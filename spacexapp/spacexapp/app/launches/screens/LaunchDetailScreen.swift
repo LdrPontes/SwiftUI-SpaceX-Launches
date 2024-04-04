@@ -26,5 +26,7 @@ struct LaunchDetailScreen: View {
 }
 
 #Preview {
-    LaunchDetailScreen()
+    RouterView {
+        LaunchDetailScreen()
+    }
 }
