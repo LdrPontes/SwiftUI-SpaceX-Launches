@@ -14,19 +14,25 @@ struct LaunchDetailScreen: View {
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Hello World")
             Button("Back to List") {
                 router.pop()
             }
             .buttonStyle(.borderedProminent)
             .tint(Color.red)
+            Button("New Screen") {
+                router.pushNamed(RocketDetailScreen.ROUTE_NAME, args: ["First Rocket Detail", 0])
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(Color.green)
         }
-        .navigationTitle("Test")
+        .navigationTitle("Detail")
     }
 }
 
 #Preview {
-    RouterView {
+    @State var path: NavigationPath = NavigationPath()
+    return RouterView(path: $path) {
         LaunchDetailScreen()
     }
 }

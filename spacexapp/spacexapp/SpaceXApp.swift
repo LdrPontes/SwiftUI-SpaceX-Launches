@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SpaceXApp: App {
+    @State private var path: NavigationPath = NavigationPath()
+    
     var body: some Scene {
         WindowGroup {
-            RouterView {
+            RouterView(path: $path) {
                 LaunchesListScreen()
             }
         }

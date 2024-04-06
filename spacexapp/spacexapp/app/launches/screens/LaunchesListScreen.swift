@@ -22,7 +22,6 @@ struct LaunchesListScreen: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(Color.red)
-            
         }
         .navigationTitle("Hello")
         .padding()
@@ -31,7 +30,8 @@ struct LaunchesListScreen: View {
 }
 
 #Preview {
-    RouterView {
+    @State var path: NavigationPath = NavigationPath()
+    return RouterView(path: $path) {
         LaunchesListScreen()
     }
 }
