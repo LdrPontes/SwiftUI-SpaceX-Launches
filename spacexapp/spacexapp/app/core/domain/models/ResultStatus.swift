@@ -13,3 +13,10 @@ enum ResultStatus<T> {
     case Failure(code: Int, message: String, exception: Error)
     case Loading
 }
+
+struct PaginatedResultStatus<T> {
+    var currentStatus: ResultStatus<T> = .Idle
+    var data: T?
+    var page: Int = 0
+    var limit: Int = 10
+}

@@ -51,7 +51,7 @@ class Router: ObservableObject {
 
 struct RouterView<Content: View>: View {
     @Binding private var path: NavigationPath
-    @ObservedObject var router: Router
+    @ObservedObject private var router: Router
     
     private let content: Content
     

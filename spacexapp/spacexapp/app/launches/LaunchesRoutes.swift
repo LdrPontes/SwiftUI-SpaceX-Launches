@@ -11,5 +11,4 @@ import SwiftUI
 let launchesRoutes: [String: Route] = [
     LaunchesListScreen.ROUTE_NAME: Route { args in LaunchesListScreen() },
     LaunchDetailScreen.ROUTE_NAME: Route { args in LaunchDetailScreen() },
-    RocketDetailScreen.ROUTE_NAME: Route { args in RocketDetailScreen(title: args![0] as! String, count: args![1] as! Int) }
 ]

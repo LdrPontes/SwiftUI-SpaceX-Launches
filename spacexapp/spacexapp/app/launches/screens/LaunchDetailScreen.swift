@@ -10,7 +10,7 @@ import SwiftUI
 struct LaunchDetailScreen: View {
     static let ROUTE_NAME = "launch-detail-screen"
     
-    @EnvironmentObject var router: Router
+    @EnvironmentObject private var router: Router
     
     var body: some View {
         VStack {
@@ -20,9 +20,6 @@ struct LaunchDetailScreen: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(Color.red)
-            Button("New Screen") {
-                router.pushNamed(RocketDetailScreen.ROUTE_NAME, args: ["First Rocket Detail", 0])
-            }
             .buttonStyle(.borderedProminent)
             .tint(Color.green)
         }
