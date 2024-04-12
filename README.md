@@ -8,6 +8,8 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
 ## Features
 
 - [x] List of SpaceX launches with pagination
+- [ ] Launch detail
+- [ ] Get rockets detail
 
 ## Requirements
 
@@ -15,15 +17,17 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
 - [x] Use the SpaceX API to fetch the data
 - [x] Use MVVM architecture
 - [x] Add custom colors to the app
+- [x] Cache Network images 
 
 ## Future improvements
 
+- [ ] Improve UI (Cards information, add animations)
 - [ ] Add unit tests
 - [ ] Add UI tests
-- [ ] Add more animations
 - [ ] Add offline first support
 
 ## Screenshots
 
+https://github.com/LdrPontes/swiftui-spacexapp/assets/26845292/10c33d30-9a6c-434d-bf79-e3ab6f842f65
 
 
