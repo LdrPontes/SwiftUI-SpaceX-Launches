@@ -14,7 +14,6 @@
 		A41831042BB6157200888022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41831032BB6157200888022 /* Assets.xcassets */; };
 		A41831072BB6157200888022 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41831062BB6157200888022 /* Preview Assets.xcassets */; };
 		A418B8392BBF056F00E03F9F /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418B8382BBF056F00E03F9F /* AppRoutes.swift */; };
-		A47A34092BBB714900683259 /* LaunchDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A34082BBB714900683259 /* LaunchDetailScreen.swift */; };
 		A47A340E2BBB72D100683259 /* ResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A340D2BBB72D100683259 /* ResultStatus.swift */; };
 		A49C99C12BC2DB4B008545A7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C99C02BC2DB4B008545A7 /* Colors.swift */; };
 		A49C99C42BC2E4B3008545A7 /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C99C32BC2E4B3008545A7 /* ScreenUtils.swift */; };
@@ -25,6 +24,8 @@
 		A4B832062BC4809400A21838 /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B832052BC4809400A21838 /* LaunchRepository.swift */; };
 		A4B832082BC483E600A21838 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B832072BC483E600A21838 /* Http.swift */; };
 		A4B8320A2BC486F500A21838 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B832092BC486F500A21838 /* Error.swift */; };
+		A4DE28EF2BC8982600A2CEB6 /* Envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE28EE2BC8982600A2CEB6 /* Envs.swift */; };
+		A4DE28FD2BC8B01E00A2CEB6 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = A4DE28FC2BC8B01E00A2CEB6 /* NukeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,6 @@
 		A41831032BB6157200888022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41831062BB6157200888022 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A418B8382BBF056F00E03F9F /* AppRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
-		A47A34082BBB714900683259 /* LaunchDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailScreen.swift; sourceTree = "<group>"; };
 		A47A340D2BBB72D100683259 /* ResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStatus.swift; sourceTree = "<group>"; };
 		A49C99C02BC2DB4B008545A7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A49C99C32BC2E4B3008545A7 /* ScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
@@ -47,6 +47,7 @@
 		A4B832052BC4809400A21838 /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
 		A4B832072BC483E600A21838 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
 		A4B832092BC486F500A21838 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A4DE28EE2BC8982600A2CEB6 /* Envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DE28FD2BC8B01E00A2CEB6 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +67,7 @@
 			children = (
 				A41830FE2BB6157000888022 /* spacexapp */,
 				A41830FD2BB6157000888022 /* Products */,
+				A4DE28FB2BC8B01E00A2CEB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				A41831012BB6157000888022 /* LaunchesListScreen.swift */,
-				A47A34082BBB714900683259 /* LaunchDetailScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -138,6 +140,7 @@
 			children = (
 				A49C99C02BC2DB4B008545A7 /* Colors.swift */,
 				A4B832022BC46CF500A21838 /* Endpoints.swift */,
+				A4DE28EE2BC8982600A2CEB6 /* Envs.swift */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -237,6 +240,13 @@
 			path = repositories;
 			sourceTree = "<group>";
 		};
+		A4DE28FB2BC8B01E00A2CEB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +263,9 @@
 			dependencies = (
 			);
 			name = spacexapp;
+			packageProductDependencies = (
+				A4DE28FC2BC8B01E00A2CEB6 /* NukeUI */,
+			);
 			productName = spacexapp;
 			productReference = A41830FC2BB6157000888022 /* spacexapp.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +294,9 @@
 				Base,
 			);
 			mainGroup = A41830F32BB6157000888022;
+			packageReferences = (
+				A4DE28FA2BC8AF9600A2CEB6 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = A41830FD2BB6157000888022 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,9 +336,9 @@
 				A40821692BBF6628003B1B6F /* LaunchesRoutes.swift in Sources */,
 				A41831022BB6157000888022 /* LaunchesListScreen.swift in Sources */,
 				A4B831FA2BC46C6600A21838 /* LaunchesViewModel.swift in Sources */,
-				A47A34092BBB714900683259 /* LaunchDetailScreen.swift in Sources */,
 				A41831002BB6157000888022 /* SpaceXApp.swift in Sources */,
 				A4B832082BC483E600A21838 /* Http.swift in Sources */,
+				A4DE28EF2BC8982600A2CEB6 /* Envs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4DE28FA2BC8AF9600A2CEB6 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4DE28FC2BC8B01E00A2CEB6 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4DE28FA2BC8AF9600A2CEB6 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A41830F42BB6157000888022 /* Project object */;
 }

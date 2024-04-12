@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ILaunchesRepository {
-    func getLaunches() async -> ResultStatus<[Launch]>
+    func getLaunches(page: Int, limit: Int) async -> ResultStatus<[Launch]>
 }

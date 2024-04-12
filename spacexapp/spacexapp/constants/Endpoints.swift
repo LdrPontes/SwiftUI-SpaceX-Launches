@@ -7,4 +7,6 @@
 
 import Foundation
 
-class Endpoints {}
+class Endpoints {
+    static let getLaunches: String = "/launches"
+}

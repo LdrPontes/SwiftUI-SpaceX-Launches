@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 let launchesRoutes: [String: Route] = [
-    LaunchesListScreen.ROUTE_NAME: Route { args in LaunchesListScreen() },
-    LaunchDetailScreen.ROUTE_NAME: Route { args in LaunchDetailScreen() },
+    LaunchesListScreen.ROUTE_NAME: Route { args in
+        LaunchesListScreen(viewModel: LaunchesViewModel(launchesRepository: LaunchesRepository(http: Http(baseUrl: Envs.BASE_URL))))
+    }
 ]

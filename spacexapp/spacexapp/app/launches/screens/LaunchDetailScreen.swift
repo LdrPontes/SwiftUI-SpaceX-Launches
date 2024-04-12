@@ -28,8 +28,5 @@ struct LaunchDetailScreen: View {
 }
 
 #Preview {
-    @State var path: NavigationPath = NavigationPath()
-    return RouterView(path: $path) {
-        LaunchDetailScreen()
-    }
+    LaunchDetailScreen()
 }

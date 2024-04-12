@@ -13,9 +13,7 @@ struct SpaceXApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RouterView(path: $path) {
-                LaunchesListScreen()
-            }
+            RouterView(path: $path, home: LaunchesListScreen.ROUTE_NAME)
         }
     }
 }

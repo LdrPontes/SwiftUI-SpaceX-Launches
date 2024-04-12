@@ -10,8 +10,8 @@ import Foundation
 class Http {
     private let baseUrl: URL
     
-    init(baseUrl: URL) {
-        self.baseUrl = baseUrl
+    init(baseUrl: String) {
+        self.baseUrl = URL(string: baseUrl)!
     }
     
     func get(_ url: String, queryParams: [String: String]? = nil, header: [String: String]? = nil) async throws -> (Data, HTTPURLResponse?) {

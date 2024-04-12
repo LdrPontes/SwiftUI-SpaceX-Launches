@@ -49,14 +49,14 @@ class Router: ObservableObject {
     }
 }
 
-struct RouterView<Content: View>: View {
+struct RouterView: View {
     @Binding private var path: NavigationPath
     @ObservedObject private var router: Router
     
-    private let content: Content
+    private let content: AnyView
     
-    init(path: Binding<NavigationPath>, @ViewBuilder content: @escaping () -> Content) {
-        self.content = content()
+    init(path: Binding<NavigationPath>, home: String) {
+        self.content = appRoutes[home]!.content(nil)
         self._path = path
         self.router = Router(path: path)
     }

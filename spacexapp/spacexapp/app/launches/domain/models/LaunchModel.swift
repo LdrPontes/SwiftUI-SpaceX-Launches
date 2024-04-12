@@ -7,12 +7,16 @@
 
 import Foundation
 
-struct Launch: Codable {
+struct Launch: Codable, Identifiable {
     let id: String
-    let dateLocal: Date
+    let dateLocal: String
     let links: Links?
     let rocket: String
-    let details: String
+    let details: String?
+    
+    private enum CodingKeys : String, CodingKey {
+            case id, dateLocal = "date_local", links, rocket, details
+        }
     
     struct Links: Codable {
         var flickr: Flickr?

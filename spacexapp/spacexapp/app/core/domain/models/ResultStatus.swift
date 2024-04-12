@@ -10,7 +10,7 @@ import Foundation
 enum ResultStatus<T> {
     case Idle
     case Success(data: T)
-    case Failure(code: Int, message: String, exception: Error)
+    case Failure(code: Int? = nil, message: String? = nil, exception: Error? = nil)
     case Loading
 }
 
