@@ -7,32 +7,14 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
 
 ## Features
 
-- [ ] List of SpaceX launches with pagination
-- [ ] Details of each launch
-  - Date
-  - Rocket
-  - Launch site
-  - Images (if available)
-  - Description
-  - Patch
-- [ ] Details of each rocket
-  - Images
-  - Description
-  - Height
-  - Diameter
-  - Mass
-  - First flight
-  - Cost per launch
-- [ ] Custom Font
-- [ ] Custom Colors
+- [x] List of SpaceX launches with pagination
 
 ## Requirements
 
-- [ ] Develop the app using SwiftUI
-- [ ] Use the SpaceX API to fetch the data
-- [ ] Use MVVM architecture
-- [ ] Use Combine to handle the data
-- [ ] Add animations to the app
+- [x] Develop the app using SwiftUI
+- [x] Use the SpaceX API to fetch the data
+- [x] Use MVVM architecture
+- [x] Add custom colors to the app
 
 ## Future improvements
 
@@ -43,5 +25,5 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
 
 ## Screenshots
 
-TODO
+
 
