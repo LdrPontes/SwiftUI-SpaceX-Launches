@@ -22,6 +22,7 @@ This is a project with the purpose of learning SwiftUI and the SpaceX API. The a
 ## Future improvements
 
 - [ ] Improve UI (Cards information, add animations)
+- [ ] Atomic Design
 - [ ] Add unit tests
 - [ ] Add UI tests
 - [ ] Add offline first support
